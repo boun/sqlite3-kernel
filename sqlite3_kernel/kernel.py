@@ -1,4 +1,4 @@
-from ipykernel.kernelbase import Kernel
+from metakernel import MetaKernel as Kernel
 from pexpect import replwrap, EOF
 
 from subprocess import check_output
@@ -6,7 +6,7 @@ from subprocess import check_output
 import re
 import signal
 
-__version__ = '0.2'
+__version__ = '0.3'
 
 version_pat = re.compile(r'SQLite version (\d+(\.\d+)+)')
 
